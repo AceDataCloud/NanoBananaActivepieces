@@ -1,0 +1,11 @@
+{
+  "source_repo": "https://github.com/AceDataCloud/NanoBananaDify",
+  "source_sha": "2703b3ee5cdc293751a15189ed24a0eb94dc3f43",
+  "source_file": "tools/api_contracts.py",
+  "only_exposed_operations": [
+    "nano_banana_generate_image",
+    "nano_banana_task_retrieve"
+  ],
+  "read_on": "2026-10-18 Asia/Shanghai",
+  "live_creation_tested": false
+}
