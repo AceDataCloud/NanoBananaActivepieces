@@ -2,11 +2,11 @@
 
 通过 Ace Data Cloud 创建 Nano Banana 图片，并按**同一任务 ID**查询。这是 Ace 提供的独立集成，不冒充 Nano Banana 官方产品。[English](README.md)
 
-**2026-10-18 状态：**`@acedatacloud/piece-nano-banana@0.1.0` 仍为源码候选。npm 发布、真实实例安装、官方目录可搜索分别待验；不能把本地构建或仓库存在当作上架。
+**2026-10-19 状态：**[`@acedatacloud/piece-nano-banana@0.1.0`](https://www.npmjs.com/package/@acedatacloud/piece-nano-banana/v/0.1.0) 已正式发布并带 provenance，公开 registry 包和普通 npm 安装已核验。包括 Nano Banana 在内的七个 Ace Piece 均通过官方 CE 0.92.3 的 registry 安装与无密钥 quickstart 导入（[验证回执](https://github.com/AceDataCloud/SunoActivepieces/actions/runs/39173846837)）；使用服务端 API，没有填 Key 或执行动作。官方共享目录仍待接受，不会因 npm 发布自动出现在所有实例的搜索结果中。
 
 ## 1. 官方安装入口与实例安装
 
-参照 [Activepieces 官方社区发布文档](https://www.activepieces.com/docs/build-pieces/sharing-pieces/community)。包发布后，CE 0.92.2+ 管理员进入 **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry**，输入包名与已核实版本。安装后在流程搜索 **Nano Banana**，核对 **Nano Banana by Ace Data Cloud**、Ace Logo 和创建/查询两个动作。
+参照 [Activepieces 官方社区发布文档](https://www.activepieces.com/docs/build-pieces/sharing-pieces/community)。CE 0.92.2+ 管理员进入 **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry**，输入包名与版本 `0.1.0`。安装后在流程搜索 **Nano Banana**，核对 **Nano Banana by Ace Data Cloud**、Ace Logo 和创建/查询两个动作。
 
 ![官方文档中的安装弹窗，仅作界面参考](docs/screenshots/install-piece.png)
 
