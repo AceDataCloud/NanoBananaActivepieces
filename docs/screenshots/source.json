@@ -1,0 +1,20 @@
+{
+  "checked_on": "2026-10-18 Asia/Shanghai",
+  "images": [
+    {
+      "file": "get-api-key-en.png",
+      "source": "https://raw.githubusercontent.com/AceDataCloud/SunoDify/8d3d03570e73324220f111f7fe343da0792a8071/_assets/tutorial/get-api-key-en.png",
+      "type": "real redacted Ace Applications screenshot, reused; no service run evidence"
+    },
+    {
+      "file": "create-api-key-en.png",
+      "source": "https://raw.githubusercontent.com/AceDataCloud/SunoDify/8d3d03570e73324220f111f7fe343da0792a8071/_assets/tutorial/create-api-key-en.png",
+      "type": "real redacted Ace key creation screenshot, reused"
+    },
+    {
+      "file": "install-piece.png",
+      "source": "https://github.com/activepieces/activepieces/blob/860ce5b87c43856549586ee7b44007ba0937efdf/docs/resources/screenshots/install-piece.png",
+      "type": "official Activepieces documentation screenshot; interface reference, not this Piece installed"
+    }
+  ]
+}

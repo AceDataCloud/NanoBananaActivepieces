@@ -1,0 +1,126 @@
+{
+  "name": "Nano Banana quickstart",
+  "type": "SHARED",
+  "summary": "",
+  "description": "",
+  "tags": [],
+  "blogUrl": "",
+  "metadata": {
+    "externalId": "nano-banana-quickstart-20261018"
+  },
+  "author": "Ace Data Cloud",
+  "categories": [],
+  "pieces": [
+    "@activepieces/piece-manual-trigger",
+    "@acedatacloud/piece-nano-banana"
+  ],
+  "flows": [
+    {
+      "displayName": "Nano Banana quickstart",
+      "trigger": {
+        "name": "trigger",
+        "valid": true,
+        "displayName": "Manual Trigger",
+        "nextAction": {
+          "name": "step_1",
+          "skip": false,
+          "type": "PIECE",
+          "valid": false,
+          "settings": {
+            "input": {
+              "auth": "",
+              "prompt": "A quiet sunrise over a mountain landscape.",
+              "model": "nano-banana-2-lite",
+              "count": 1,
+              "resolution": "1K",
+              "aspect_ratio": "1:1"
+            },
+            "pieceName": "@acedatacloud/piece-nano-banana",
+            "actionName": "nano_banana_generate_image",
+            "sampleData": {},
+            "pieceVersion": "0.1.0",
+            "propertySettings": {
+              "prompt": {
+                "type": "MANUAL"
+              },
+              "model": {
+                "type": "MANUAL"
+              },
+              "count": {
+                "type": "MANUAL"
+              },
+              "resolution": {
+                "type": "MANUAL"
+              },
+              "aspect_ratio": {
+                "type": "MANUAL"
+              }
+            },
+            "errorHandlingOptions": {
+              "retryOnFailure": {
+                "value": false
+              },
+              "continueOnFailure": {
+                "value": false
+              }
+            }
+          },
+          "displayName": "Create Nano Banana task",
+          "lastUpdatedDate": "2026-10-12T00:00:00.000Z",
+          "nextAction": {
+            "name": "step_2",
+            "skip": false,
+            "type": "PIECE",
+            "valid": false,
+            "settings": {
+              "input": {
+                "auth": "",
+                "task_id": "{{step_1['output']['task_id']}}",
+                "wait_seconds": 0
+              },
+              "pieceName": "@acedatacloud/piece-nano-banana",
+              "actionName": "nano_banana_task_retrieve",
+              "sampleData": {},
+              "pieceVersion": "0.1.0",
+              "propertySettings": {
+                "task_id": {
+                  "type": "MANUAL"
+                },
+                "wait_seconds": {
+                  "type": "MANUAL"
+                }
+              },
+              "errorHandlingOptions": {
+                "retryOnFailure": {
+                  "value": false
+                },
+                "continueOnFailure": {
+                  "value": false
+                }
+              }
+            },
+            "displayName": "Get Nano Banana task",
+            "lastUpdatedDate": "2026-10-12T00:00:00.000Z"
+          }
+        },
+        "lastUpdatedDate": "2026-10-12T00:00:00.000Z",
+        "type": "PIECE_TRIGGER",
+        "settings": {
+          "propertySettings": {
+            "markdown": {
+              "type": "MANUAL"
+            }
+          },
+          "pieceName": "@activepieces/piece-manual-trigger",
+          "pieceVersion": "0.0.8",
+          "triggerName": "manual_trigger",
+          "input": {}
+        }
+      },
+      "valid": true,
+      "schemaVersion": "27",
+      "notes": []
+    }
+  ],
+  "status": "PUBLISHED"
+}
