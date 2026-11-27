@@ -6,7 +6,7 @@ Create Nano Banana images with Ace Data Cloud, then query the **same task ID**. 
 
 ## 1. Install the released package
 
-[Activepieces community publication guide](https://www.activepieces.com/docs/build-pieces/sharing-pieces/community). For Activepieces CE 0.92.2+, a platform administrator uses **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry** and enters `@acedatacloud/piece-nano-banana` with version `0.1.0`. Once installed, search **Nano Banana** in a flow, confirm **Nano Banana by Ace Data Cloud** and the Ace logo, then choose **Create Nano Banana task** or **Get Nano Banana task**.
+[Activepieces community publication guide](https://www.activepieces.com/docs/build-pieces/sharing-pieces/community). For Activepieces CE 0.92.2+, a platform administrator uses **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry** and enters `@acedatacloud/piece-nano-banana` with version `0.1.1`. Once installed, search **Nano Banana** in a flow, confirm **Nano Banana by Ace Data Cloud** and the Ace logo, then choose **Create Nano Banana task** or **Get Nano Banana task**.
 
 ![Official Activepieces custom-piece installation dialog](docs/screenshots/install-piece.png)
 
@@ -14,8 +14,8 @@ The screenshot is an official Activepieces documentation reference retrieved on 
 
 ## 2. Register and obtain the correct API key
 
-1. Register or sign in at [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=nano_banana_activepieces_readme_api_key). If no General application exists, choose **Initialize General Application**.
-2. Open General application or an application with **Nano Banana** access. General keys access entitled services; service-specific keys are limited to that service. Check [current price and balance](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=nano_banana_activepieces_readme_pricing) before creating anything.
+1. Register or sign in at [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen). If no General application exists, choose **Initialize General Application**.
+2. Open General application or an application with **Nano Banana** access. General keys access entitled services; service-specific keys are limited to that service. Check [current price and balance](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen) before creating anything.
 3. Click the application copy button marked **1**, or **Manage Keys** marked **2** to create a dedicated key.
 
 ![Copy the API key or open Manage Keys; real redacted screenshot](docs/screenshots/get-api-key-en.png)
@@ -31,7 +31,7 @@ These redacted Ace console screenshots are reused from the fixed source listed i
 1. Import [the credential-free quickstart](examples/quickstart.json). It has Manual Trigger → Create Nano Banana task → Get Nano Banana task. The target instance also needs official `@activepieces/piece-manual-trigger@0.0.8`.
 2. Select your own connection in both actions. Start with model `nano-banana-2-lite` and one image, 1K, 1:1. Review current price; these are sample inputs, not a price guarantee.
 3. Run creation **once**, save `task_id`. Lookup maps that output automatically. If `pending`, wait and repeat only **Get Nano Banana task** using the same ID. Keep creation outside repeated polling.
-4. Use `media_urls` only after `status=succeeded` and `success=true`; a pending preview is not final. Confirm one creation request and Credits deduction in [request history](https://platform.acedata.cloud/console/usages?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=nano_banana_activepieces_readme_request_history). Task lookup does not create another item.
+4. Use `media_urls` only after `status=succeeded` and `success=true`; a pending preview is not final. Confirm one creation request and Credits deduction in [request history](https://platform.acedata.cloud/console/usages?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen). Task lookup does not create another item.
 
 The first version exposes text-to-image only; image editing is not exposed yet. HTTP creation retries and template step retries are disabled. On creation timeout or 5xx inspect history before another submission; the task might already exist. No paid request was made during source validation.
 
