@@ -38,7 +38,7 @@
             "pieceName": "@acedatacloud/piece-nano-banana",
             "actionName": "nano_banana_generate_image",
             "sampleData": {},
-            "pieceVersion": "0.1.1",
+            "pieceVersion": "0.1.2",
             "propertySettings": {
               "prompt": {
                 "type": "MANUAL"
@@ -81,7 +81,7 @@
               "pieceName": "@acedatacloud/piece-nano-banana",
               "actionName": "nano_banana_task_retrieve",
               "sampleData": {},
-              "pieceVersion": "0.1.1",
+              "pieceVersion": "0.1.2",
               "propertySettings": {
                 "task_id": {
                   "type": "MANUAL"
