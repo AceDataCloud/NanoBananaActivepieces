@@ -1,6 +1,6 @@
 <!-- Generated from README.md by AceDataCloud/Index plans/plugin-readme-audit/render_channel_readmes.py. -->
 
-# Nano Banana by Ace Data Cloud for Activepieces
+# Nano Banana for Activepieces
 
 Create Nano Banana images with Ace Data Cloud, then query the **same task ID**. This is an independent Ace integration, not an official Nano Banana product. [中文指南](../README.zh-CN.md)
 
@@ -8,7 +8,7 @@ Create Nano Banana images with Ace Data Cloud, then query the **same task ID**. 
 
 ## 1. Install the released package
 
-[Activepieces community publication guide](https://www.activepieces.com/docs/build-pieces/sharing-pieces/community). For Activepieces CE 0.92.2+, a platform administrator uses **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry** and enters `@acedatacloud/piece-nano-banana` with version `0.1.2`. Once installed, search **Nano Banana** in a flow, confirm **Nano Banana by Ace Data Cloud** and the Ace logo, then choose **Create Nano Banana task** or **Get Nano Banana task**.
+[Activepieces community publication guide](https://www.activepieces.com/docs/build-pieces/sharing-pieces/community). For Activepieces CE 0.92.2+, a platform administrator uses **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry** and enters `@acedatacloud/piece-nano-banana` with version `0.1.3`. Once installed, search **Nano Banana** in a flow, confirm **Nano Banana** and the Ace logo, then choose **Create Nano Banana task** or **Get Nano Banana task**.
 
 ![Official Activepieces custom-piece installation dialog](../docs/screenshots/install-piece.png)
 
