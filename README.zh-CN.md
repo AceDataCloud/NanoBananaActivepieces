@@ -14,13 +14,13 @@
 
 ## 2. 注册、登录并获取 API Key
 
-1. 进入 [Ace Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen) 注册或登录；没有通用应用时点击 **Initialize General Application**。
-2. 打开通用应用或具有 **Nano Banana** 权限的专用应用。通用 Key 可访问账号有权使用的服务，专用 Key 只限对应服务。创建前查看[当前价格与余额](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen)。
-3. 用图中 **1** 的复制按钮复制 Key，或 **2** 的 **Manage Keys** 管理独立密钥。
+1. 进入 [Ace Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen) 注册或登录。页面会自动准备好**通用应用**卡片。
+2. 可使用**通用应用**或具有 **Nano Banana** 权限的专用应用。通用 Key 可访问账号有权使用的服务，专用 Key 只限对应服务。创建前查看[当前价格](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen)。应用余额不足时，点击该应用卡片上的**充值**。
+3. 点击 **API KEY** 旁标为 **1** 的复制按钮，或 **2** 的 **Manage Keys** 管理独立密钥。
 
 ![复制 Key 或管理密钥：已脱敏真实控制台图](docs/screenshots/get-api-key-en.png)
 
-4. **Manage Keys → Create**，命名 `Activepieces Nano Banana`，按需设置有效期与用量限制；启用 Allowed APIs 时同时包含 `/nano-banana/images` 与 `/nano-banana/tasks`，创建后复制。
+4. 如需独立密钥，选择 **Manage Keys → Create**，命名 `Activepieces Nano Banana`，按需设置有效期与用量限制；启用 Allowed APIs 时同时包含 `/nano-banana/images` 与 `/nano-banana/tasks`，创建后复制。
 
 ![创建独立 Key：已脱敏真实控制台图](docs/screenshots/create-api-key-en.png)
 

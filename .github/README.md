@@ -16,13 +16,13 @@ The screenshot is an official Activepieces documentation reference retrieved on 
 
 ## 2. Register and obtain the correct API key
 
-1. Register or sign in at [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=github&utm_medium=referral&utm_campaign=evergreen). If no General application exists, choose **Initialize General Application**.
-2. Open General application or an application with **Nano Banana** access. General keys access entitled services; service-specific keys are limited to that service. Check [current price and balance](https://platform.acedata.cloud/models?utm_source=github&utm_medium=referral&utm_campaign=evergreen) before creating anything.
-3. Click the application copy button marked **1**, or **Manage Keys** marked **2** to create a dedicated key.
+1. Register or sign in at [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=github&utm_medium=referral&utm_campaign=evergreen). The page prepares your **General Application** card automatically.
+2. Use the **General Application** card or a card with **Nano Banana** access. General keys access entitled services; service-specific keys are limited to that service. Check [current pricing](https://platform.acedata.cloud/models?utm_source=github&utm_medium=referral&utm_campaign=evergreen) before running the action. If the application balance is low, click **Top Up** on its card.
+3. Click the copy button beside **API KEY** (marked **1**), or **Manage Keys** marked **2** to create a dedicated key.
 
 ![Copy the API key or open Manage Keys; real redacted screenshot](../docs/screenshots/get-api-key-en.png)
 
-4. Choose **Manage Keys → Create**, name it `Activepieces Nano Banana`, set expiry and usage limits as needed. If **Allowed APIs** is enabled, include `/nano-banana/images` and `/nano-banana/tasks`. Copy the created key.
+4. For a dedicated key, choose **Manage Keys → Create**, name it `Activepieces Nano Banana`, set expiry and usage limits as needed. If **Allowed APIs** is enabled, include `/nano-banana/images` and `/nano-banana/tasks`. Copy the created key.
 
 ![Create a dedicated API key; real redacted screenshot](../docs/screenshots/create-api-key-en.png)
 
